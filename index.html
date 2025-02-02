@@ -2,10 +2,46 @@
 <html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
   <title>Рассчитай дату сдачи документа</title>
+  <link rel="stylesheet" href="style.css">
 </head>
-<body>
-  
+<body class="page">
+  <header class="page__header header">
+    <h1 class="header__title">Счётчик сроков</h1>
+  </header>
+  <main class="page__main">
+    <form class="page__form" name="dates" novalidate>
+      <div class="page__form-wrapper">
+        <label for="start-date" class="page__form-label">Введите дату, с которой нужно начать отсчёт.</label>
+        <input 
+        type="date"
+        name="start-date"
+        id="start-date"
+        class="page__form-input"
+        required>
+      </div>
+      <div class="page__form-wrapper">
+        <label for="number" class="page__form-label">Введите количество записей.</label>
+        <input 
+        type="number"
+        name="number"
+        id="number"
+        class="page__form-input"
+        required>
+      </div>
+      <button type="submit" class="page__form-button">Начнём!</button>
+    </form>
+    <ul class="page__list list"></ul>
+  </main>
+  <footer class="page__footer"></footer>
+
+  <template id="row">
+    <li class="list__item row">
+    </li>
+  </template>
+
+  <script type="module" src="index.js"></script>
 </body>
 </html>
