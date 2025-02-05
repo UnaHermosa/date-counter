@@ -1,0 +1,7 @@
+.page__form {
+  display: flex;
+  margin-block-end: 35px;
+  flex-direction: column;
+  gap: 30px;
+}
+  
