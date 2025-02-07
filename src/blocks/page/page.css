@@ -1,17 +1,19 @@
 @import url('../page/__header/page__header-title.css');
 @import url('../page/__form/page__form.css');
 @import url('../page/__form-label/page__form-label.css');
-@import url('../page/__form-button/page__form-button.css');
+@import url('../page/__form-reset/page__form-reset.css');
+@import url('../page/__form-wrapper/page__form-wrapper.css');
 
 .page {
-    min-inline-size: 320px;
-    max-inline-size: 900px;
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
-    padding-block-start: 30px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 22px;
-    color: #000;
-    background-color: #fff;
-  }
+  position: relative;
+  min-inline-size: 320px;
+  max-inline-size: 900px;
+  display: flex;
+  flex-direction: column;
+  margin: 0 auto;
+  padding-block-start: 30px;
+  font-family: 'Times New Roman', Times, serif;
+  font-size: 22px;
+  color: #000;
+  background-color: #fff;
+}

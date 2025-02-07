@@ -1,3 +1,4 @@
+@import url('../list/__item-caption/list__item-caption.css');
 @import url('../list/__item/list__item.css');
 @import url('../list/__item_text/list__item_text.css');
 @import url('../list/__item_text-caption/list__item_text-caption.css');
@@ -5,6 +6,7 @@
 .list {
   display: none;
   margin: 0;
+  margin-block-end: 10px;
   padding: 0;
   list-style: none;
   font: inherit;
